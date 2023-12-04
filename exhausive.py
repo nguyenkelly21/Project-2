@@ -43,13 +43,8 @@ def read_input_from_file(file_path):
             N_line = file.readline()
             if not N_line:
                 break
-            # skips whitespace
-            while N_line.isspace():
-                N_line = file.readline().strip()
             N = int(N_line.strip())
             stocks_values_str = file.readline().strip()
-            if stocks_values_str.isspace():
-                continue
             stocks_values = [list(map(int, stock.strip('[]').split(','))) for stock in stocks_values_str[1:-1].split('],[')]
             amount = int(file.readline().strip())
             instances.append((N, stocks_values, amount))
