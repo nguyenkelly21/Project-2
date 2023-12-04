@@ -1,5 +1,6 @@
 # Project-2
 Name: Kelly Nguyen and Karene Rosales
+
 Email: nguyenkelly21@csu.fullerton.edu, 
 
 Instructions:
