@@ -20,8 +20,12 @@ def read_input_from_file(file_path):
             N_line = file.readline()
             if not N_line:
                 break
+            while N_line.isspace():
+                N_line = file.readline().strip()
             N = int(N_line.strip())
             stocks_values_str = file.readline().strip()
+            if stocks_values_str.isspace():
+                continue
             # get values by splitting up the lines
             stocks_values = [list(map(int, stock.strip('[]').split(','))) for stock in stocks_values_str[1:-1].split('],[')]
             amount = int(file.readline().strip())
