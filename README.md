@@ -13,6 +13,6 @@ Instructions:
 
 5) Run the file dynamic.py or exhausive.py
 
-'python3 dynamic.py' or 'python3 dynamic.py'
+'python3 dynamic.py' or 'python3 exhausive.py'
 
 7) Finish
