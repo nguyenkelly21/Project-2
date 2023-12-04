@@ -20,6 +20,7 @@ def read_input_from_file(file_path):
             N_line = file.readline()
             if not N_line:
                 break
+            # skips whitespace
             while N_line.isspace():
                 N_line = file.readline().strip()
             N = int(N_line.strip())
