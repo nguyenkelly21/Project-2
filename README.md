@@ -1,7 +1,7 @@
 # Project-2
 Name: Kelly Nguyen and Karene Rosales
 
-Email: nguyenkelly21@csu.fullerton.edu, 
+Email: nguyenkelly21@csu.fullerton.edu, krosales@csu.fullerton.edu
 
 Instructions:
 1) Clone the repository
