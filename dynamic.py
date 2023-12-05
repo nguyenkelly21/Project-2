@@ -32,7 +32,12 @@ def read_input_from_file(file_path):
 file_path = 'input_project2.txt'
 instances = read_input_from_file(file_path)
 
+# open output file
+output_file = open('output.txt', 'w')
+
 # call dp max_stocks for each instamce set
 for i, (instance_N, stocks_values, amount) in enumerate(instances, start=1):
     result = dynamic_max_stocks(instance_N, stocks_values, amount)
-    print(f"Input #{i}: {result}")
+    output_file.write(f"Input #{i}: {result}\n")
+
+output_file.close()
