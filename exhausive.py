@@ -49,11 +49,13 @@ def read_input_from_file(file_path):
             amount = int(file.readline().strip())
             instances.append((N, stocks_values, amount))
     return instances
-
+    
 # read from input file to get input
 file_path = 'input_project2.txt'
 instances = read_input_from_file(file_path)
 
+# open output file
+output_file = open('output.txt', 'w')
 
 # call dp max_stocks for each instamce set
 for i, (instance_N, stocks_values, amount) in enumerate(instances, start=1):
@@ -61,4 +63,6 @@ for i, (instance_N, stocks_values, amount) in enumerate(instances, start=1):
     total_sum = 0
     for value in result:
         total_sum += value[0]
-    print(f"Input #{i}: {total_sum}")
+    output_file.write(f"Input #{i}: {total_sum}\n")
+
+output_file.close()
